@@ -1,8 +1,10 @@
-function validateForm() {
+function validateForm() { //W3Schools, n.d.
     let x = document.forms["cForm"]["fname"].value;
     let z = document.forms["cForm"]["sname"].value;
     let a = document.forms["cForm"]["email"].value;
-    let b = document.forms["cForm"]["pnumber"].value.trim(); //W3Schools,n.d.
+    //let b = document.forms["cForm"]["pnumber"].value.trim(); //W3Schools,n.d.
+    let c = document.forms["cForm"]["ctype"].value;
+
 
     const numberL = /^0\d{12}$/; //0 makes sure the number starts of with zero (W3Schools, n.d.)
 
@@ -18,13 +20,17 @@ function validateForm() {
         alert("Enter a valid email");
         return false; 
     }
-    if (!numberL.test(b)){
-        alert("Need 13 numbers")
-        return false;
+    //if (!numberL.test(b)){
+    //    alert("Need 13 numbers")
+    //    return false;
 
+    //}
+
+    if (c == "") {
+        alert("Pick a coffee");
+        return false;
     }
 
-    
     document.images["thecup"].src = "../images/fullcup.png";
     return false; //Preventing the page from reloading and removing the image swap
 }
@@ -39,3 +45,5 @@ function validateForm() {
 //https://mimo.org/tutorials/javascript/how-to-change-image-source-in-javascript
 
 //https://stackoverflow.com/questions/11722400/programmatically-change-the-src-of-an-img-tag
+
+//https://www.w3schools.com/js/js_validation.asp
