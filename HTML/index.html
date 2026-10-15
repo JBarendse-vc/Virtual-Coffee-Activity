@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javaScript.js" defer></script>
+</head>
+<body>
+    <form name="cForm" action="" onsubmit="return validateForm()" method="post">
+        <label for="fname">Name</label><br>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="sname">Surname</label> <br>
+        <input type="text" id="sname" name="sname"> <br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+
+        <label for="pnumber">Phone Number</label><br>
+        <input type="text" id="pnumber" name="pnumber"> <br>
+
+        <input type="radio" id="csorter" name="ctype" value="Latte">
+        <label for="latte">Latte</label> <br>
+
+        <input type="radio" id="Mocha" name="ctype" value="Mocha">
+        <label for="mocha">Mocha</label><br>
+
+        <input type="radio" id="cuppa" name="ctype" value="Cuppaciano">
+        <label for="cuppa">Cuppaciano</label>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
