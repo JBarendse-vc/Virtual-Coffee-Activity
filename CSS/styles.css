@@ -1,0 +1,51 @@
+header,footer{
+    background-image: url(../images/bground.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: center;
+    align-content: center;
+    color: rgb(117, 82, 42);
+    text-shadow: 2px 2px 4px rgba(16, 14, 14, 0.3);
+
+}
+
+
+
+
+.customform {
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin: auto;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.cupimg {
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 100px;
+    margin-bottom: 50px;
+    max-width: 260px;
+    height: 140px;
+
+}
+
+
+.flexrow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-self: center ;
+    background-color: rgb(253, 255, 255);
+    row-gap: 10;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    
+    
+}
