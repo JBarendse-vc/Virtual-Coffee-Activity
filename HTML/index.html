@@ -4,16 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffe Time ?</title>
+    <link rel="stylesheet" href="../CSS/lightbox.css">
     <link rel="stylesheet" href="../CSS/styles.css">
-    
+    <script src="../JavaScript/modernizr.custom.js"></script>
 </head>
 <body>
     <header>
         <h1>Dont Go Thirsty</h1>
     </header>
+    <h2> Have a look at the </h2>
+    <div class="flexrow2">
+        <a href="../images/americano.jpg" data-lightbox="coffee-gallery" title="Americano">
+            <img class="coffeeimg" src="../images/americano.jpg" alt="Americano">
+            <h3>Americano</h3>
+        </a>
+        <a href="../images/cuppaciano.jpg" data-lightbox="coffee-gallery" title="Cuppaciano">
+            <img class="coffeeimg" src="../images/cuppaciano.jpg" alt="Cuppaciano">
+            <h3>Cuppaciano</h3>
+        </a>
+        <a href="../images/icedCoffee.jpg" data-lightbox="coffee-gallery" title="Iced Coffee">
+            <img class="coffeeimg" src="../images/icedCoffee.jpg" alt="Iced Coffee">
+            <h3>Iced Coffee</h3>
+        </a>
+        <a href="../images/latte.jpg" data-lightbox="coffee-gallery" title="Latte">
+            <img class="coffeeimg" src="../images/latte.jpg" alt="Latte">
+            <h3>Latte</h3>
+        </a>
+        <a href="../images/expresso.jpg" data-lightbox="coffee-gallery" title="Espresso">
+            <img class="coffeeimg" src="../images/expresso.jpg" alt="Espresso">
+            <h3>Expresso</h3>
+        </a>
+    </div>
     <div class="flexrow">
         <div>
-            <form name="cForm" action="" onsubmit="return validateForm()" method="post" class="customform">
+            <form name="cForm" action="" onsubmit="return validateForm()" method="post" class="customform"> 
+                <!-- W3Schools, n.d. -->
                 <label for="fname">Name</label><br>
                 <input type="text" id="fname" name="fname"><br>
 
@@ -29,13 +54,20 @@
                 <input type="radio" id="csorter" name="ctype" value="Latte">
                 <label for="latte">Latte</label> <br>
 
-                <input type="radio" id="Mocha" name="ctype" value="Mocha">
-                <label for="mocha">Mocha</label><br>
+                <input type="radio" id="expresso" name="ctype" value="expresso">
+                <label for="mocha">Expresso</label><br>
 
                 <input type="radio" id="cuppa" name="ctype" value="Cuppaciano">
-                <label for="cuppa">Cuppaciano</label>
+                <label for="cuppa">Cuppaciano</label> <br>
 
-                <input type="submit" value="Submit">
+                <input type="radio" id="americano" name="ctype" value="americano">
+                <label for="americano">Americano</label> <br>
+
+                <input type="radio" id="icedlatter" name="ctype" value="icedlatte">
+                <label for="icedlatte">Iced Latte</label><br>
+
+
+                <input type="submit" value="Submit"> <br> <br>
 
             </form>
         </div>
@@ -44,8 +76,23 @@
         </div>
     </div>
     <footer>
-        <h1>Pick a Coffee ! </h1>
+        <h1> Pick a Coffee ! </h1>
     </footer>
+
+    <script src="../JavaScript/jquery-1.10.2.min.js"></script>
+    <script src="../JavaScript/lightbox-2.6.min.js"></script>
     <script src="../JavaScript/javaScript.js" defer></script>
 </body>
 </html>
+
+<!-- https://www.geeksforgeeks.org/html/html-javascript/ -->
+
+ <!-- https://images.unsplash.com/photo-1572097459836-9ba0b73bca31?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D -->
+
+ <!-- https://unsplash.com/photos/clear-drinking-glass-with-coffee-on-top-of-white-table-IhqDpFz7I8Q -->
+
+ <!-- https://images.unsplash.com/photo-1583165278997-0250ea5d72e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D -->
+
+ <!-- https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D -->
+
+ <!-- https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D -->
